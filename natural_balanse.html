@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Balance</title>
+    <style>
+       
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #F2EFE0; color: #222; }
+        .container { width: 100%;max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+
+        header { display: flex; justify-content: space-between; align-items: center; padding: 25px 0; }
+        .logo { font-size: 18px; font-weight: bold; line-height: 1.2; display: flex; align-items: center; gap: 10px; }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { text-decoration: none; color: #333; font-size: 16px; }
+        nav a.active { color: #8fa37d; border-bottom: 2px solid #8fa37d; padding-bottom: 3px; }
+        .icons { display: flex; gap: 15px; cursor: pointer; }
+
+     
+        .hero { 
+            background: #D1DCC6 url('/image/IMG_1.png') no-repeat center/cover; 
+            padding: 100px 0px; 
+            display: flex; 
+            align-items: center;
+        }
+        .hero-content { max-width: 1900px; }
+        .hero h1 { font-size: 42px; font-weight: 400; margin-bottom: 15px; line-height: 1.1; color: #2C2C2C; }
+        .hero p { font-size: 18px; margin-bottom: 30px; color: #333; }
+        .btn { background-color: #89643A; color: white; padding: 15px 40px; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; transition: 0.3s; }
+        .btn:hover { background-color: #72522e; }
+
+   
+        .categories {  display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin: 60px 0;  }
+        .card { 
+            flex: 1; 
+            border-radius: 12px; 
+            padding: 20px; 
+            text-align: center; 
+            height: 320px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: flex-end; 
+            position: relative;
+        }
+        .card img { width: 85%; margin: 0 auto auto; display: block; object-fit: contain; }
+        .card h3 { font-size: 22px; font-weight: 400; color: #222; }
+        
+        .c-face { background-color: #BDC6AE; } 
+        .c-body { background-color: #9F8268; } 
+        .c-sets { background-color: #98ADC4; } 
+
+        .c-cream { background-color: #C6B7AD; } 
+        .c-ointment { background-color: #A26D5A; } 
+        .c-soap { background-color: #BBB794; } 
+
+        .card-advertisment {
+           
+            padding: 20px; 
+            text-align: center; 
+            height: 320px; 
+            display: flex; 
+            
+            margin-bottom: 60px;
+            background-color: #BDC6AE;
+          
+        }
+        
+        .ad-image-container {
+            position: relative;
+            height: 280px;
+            width: 1675px;
+            margin: 0 auto;
+        }
+
+        .ad-image-container img {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        .ad-text {position: absolute;top: 10px;left: 10px;color: #222;background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .close-icon {position: absolute;top: 10px;right: 10px;cursor: pointer; width: 22px;height: 22px;background-color: rgba(255, 255, 255, 0.7);border-radius: 50%;
+            display: flex;align-items: center;justify-content: center;color: #222;}
+        
+        footer { background-color: #627159; color: #fff; padding: 50px 0 70px; font-size: 13px; }
+        .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+        .footer-logo { font-size: 16px; font-weight: bold; line-height: 1.3; color: #D1D6CC; display: flex; flex-direction: column; gap: 10px;}
+        .footer-links { display: flex; gap: 60px; }
+        .footer-links div { display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a { color: #BAC4B5; text-decoration: none; transition: 0.2s;}
+        .footer-links a:hover { color: #fff; }
+        
+        .footer-contact { display: flex; flex-direction: column; gap: 12px; color: #BAC4B5; min-width: 200px;}
+      
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/image/logo.png" alt="Лого" height="40">
+                <span>NATURAL<br>BALANCE</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="/image/icon1.png" alt="Поиск" width="22">
+                <img src="/image/icon2.png" alt="Профиль" width="22">
+            </div>
+        </header>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>ПРИРОДНЫЙ УХОД<br>ДЛЯ ВАШЕЙ КОЖИ.</h1>
+                <p>Чистота и эффективность<br>из сердца природы.</p>
+                <button class="btn">В каталог</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="categories">
+            <div class="card c-face">
+                <img src="/image/icon3.png" alt="Уход за лицом">
+                <h3>Уход за лицом</h3>
+            </div>
+            <div class="card c-body">
+                <img src="/image/icon4.png" alt="Для тела">
+                <h3>Для тела</h3>
+            </div>
+            <div class="card c-sets">
+                <img src="/image/icon5.png" alt="Наборы">
+                <h3>наборы</h3>
+            </div>
+           
+              <div class="card c-cream">
+                <img src="/image/icon6.png" alt="Уход за лицом">
+                <h3>Крема</h3>
+            </div>
+            <div class="card c-ointment">
+                <img src="/image/icon7.png" alt="Для тела">
+                <h3>Мази</h3>
+            </div>
+            <div class="card c-soap">
+                <img src="/image/icon8.png" alt="Наборы">
+                <h3>Крем мыло</h3>
+            </div>
+            
+        </section>
+    </div>
+
+    <div >
+        <section class="card-advertisment">
+            <div class="ad-image-container">
+                <img src="/image/rec.png" alt="Реклама">
+                <figcaption class="ad-text">Реклама</figcaption>
+                <div class="close-icon">&times;</div>
+            </div>    
+            
+            
+        </section>
+    </div>
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo">
+                <img src="/image/logo.png" alt="Лого" height="60" style="width: 60px;">
+                <span>NATURAL<br>BALANCE</span>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <a href="#">Главная</a>
+                    <a href="#">Каталог</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div>
+                    <a href="#">Команда</a>
+                    <a href="#">Партнеры</a>
+                    <a href="#">Производители</a>
+                    <a href="#">Лицензии</a>
+                </div>
+                <div>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Документы</a>
+                    <a href="#">Реквизиты</a>
+                    <a href="#">Вопрос ответ</a>
+                </div>
+                <div>
+                    <a href="#">Проекты</a>
+                    <a href="#">Пресс-центр</a>
+                    <a href="#">Возможности</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                 <span>Подписаться</span>
+                <span>+7 (000) 000-00-00</span>
+                <span>natural@mail.ru</span>
+                <span>Москва</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
